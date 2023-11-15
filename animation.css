@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fond{
+    background-image: url(./imagenes/fondo.jpeg);
+    height: 90rem;
+    background-size: cover;
+    animation: fond 5s linear infinite;
+}
+
+.carro {
+    position: absolute;
+    padding: 10rem;
+    display: flex;
+    justify-content: center;
+    left: 53rem;
+    bottom: 1rem;
+}
+
+.rueda {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    top: 62rem;
+    left: 23rem;
+    animation: movimeinto 3s linear infinite;
+
+}
+
+.smoke{
+    background: url(./imagenes/smoke.png);
+    position: absolute;
+    width: 98px;
+    height: 395px;
+    top: 58rem;
+    left: -4rem;   
+    animation: polvo 3s steps(3) infinite; 
+}
+
+@keyframes smoke {
+    100%{
+        background-position-x:244px;
+    }
+    
+}
+
+@keyframes movimiento {
+
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fond {
+    100%{
+        background-position-x: -1000rem;
+    }
+}
